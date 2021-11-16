@@ -1,0 +1,178 @@
+/* Universal Styles */
+
+body {
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: rgba(228, 220, 220, 0.979);
+}
+
+header nav {
+    flex-basis: 100%;
+    margin-top: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    font-size: 1.5rem;
+    color: #4a4a4a;
+}
+
+header .logo {
+    max-width: 400px;
+}
+
+header .logo a img {
+    width: 100%;
+}
+
+/* Sub Header */
+
+.sub-header {
+    display: flex;
+    align-items: center;
+    height: 37.5rem;
+    background-repeat: no-repeat;
+    background-image: url('./assets/wesley-tingey-dKCKiC0BQtU-unsplash.jpg');
+    background-position: center;
+}
+
+.sub-header-txt {
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    color: lightgrey;
+    text-shadow: 2px 2px 8px #FF0000;
+    font-family: 'Lobster', cursive;
+    padding: 0 3rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .sub-header-txt{
+        font-size: 1.5rem;
+    }
+}
+
+/* Statement */
+
+.statement{
+    text-align: center;
+    font-family: 'Indie Flower';
+    margin: 5rem 0;
+}
+
+.statement h2 {
+    font-size: 2rem;
+}
+
+.statement h3, .statement p{
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .statement h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.statement h3, .statement p{
+    font-size: 2rem;
+}
+
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+    background-color: #f3f3f3;
+    flex-wrap: wrap;
+}
+
+.feature {
+    padding: 2rem;
+    margin: 1.25rem;
+    background-color: white;
+}
+
+.future .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature .image-container {
+    margin: 0 auto;
+}
+
+.feature .image-container img {
+    display: block;
+    height: 200px;
+    width: 360px;
+}
+
+.feature .content {
+    text-align: center;
+    padding: 2.5rem 0;
+    margin: 0 auto;
+}
+
+.feature h2 {
+    padding-bottom: .5rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+/* Team Section */
+
+.team-section {
+    padding: 2rem 0;
+    background-repeat: no-repeat;
+    background-image: url('./assets/finance-background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+
+.team-section .team-heading h1 {
+    font-size: 3.5rem;
+    letter-spacing: 1.5rem;
+}
+
+.team-section .images-container {
+    max-width: 100%;
+    padding: 0 1%;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #9b9b9b;
+    padding: 1.5rem 2rem;
+}
