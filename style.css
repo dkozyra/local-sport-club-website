@@ -99,50 +99,52 @@ header .logo a img {
 
 .gallery {
     display: flex;
-    justify-content: center;
-    padding: 4rem 0;
-    background-color: #f3f3f3;
+    /* justify-content: center; */
+    /* padding: 4rem 0; */
+    /* background-color: #f3f3f3; */
     flex-wrap: wrap;
 }
 
 .feature {
-    padding: 2rem;
-    margin: 1.25rem;
+    /* width: 30%; */
+    /* height: auto; */
+    /* flex-grow: 1; */
+    /* padding: 2rem; */
+    /* margin: 1.25rem; */
     background-color: white;
 }
 
-.future .center {
+/* .future .center {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
-.feature .image-container {
+/* .feature .image-container {
     margin: 0 auto;
+} */
+
+.feature img {
+    width: 30%;
+    height: auto;
 }
 
-.feature .image-container img {
-    display: block;
-    height: 200px;
-    width: 360px;
-}
-
-.feature .content {
+/* .feature .content {
     text-align: center;
     padding: 2.5rem 0;
     margin: 0 auto;
-}
+} */
 
-.feature h2 {
+/* .feature h2 {
     padding-bottom: .5rem;
     font-size: 2.25rem;
     font-weight: bold;
     color: #4a4a4a;
-}
+} */
 
 /* Team Section */
 
-.team-section {
+/* .team-section {
     padding: 2rem 0;
     background-repeat: no-repeat;
     background-image: url('./assets/finance-background.jpg');
@@ -150,29 +152,29 @@ header .logo a img {
     background-position: center;
     text-align: center;
     color: white;
-}
+} */
 
 
-.team-section .team-heading h1 {
+/* .team-section .team-heading h1 {
     font-size: 3.5rem;
     letter-spacing: 1.5rem;
-}
+} */
 
-.team-section .images-container {
+/* .team-section .images-container {
     max-width: 100%;
     padding: 0 1%;
     margin-top: 6rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
+} */
 
 
 
 
 /* Footer */
 
-footer {
+/* footer {
     background-color: #9b9b9b;
     padding: 1.5rem 2rem;
-}
+} */
