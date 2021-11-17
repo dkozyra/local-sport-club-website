@@ -22,6 +22,7 @@ header nav {
 header nav ul {
     display: flex;
     justify-content: space-around;
+    padding: 0;
 }
 
 header nav ul li {
@@ -90,7 +91,6 @@ header .logo a img {
     font-size: 2rem;
 }
 
-
 /* Gallery */
 
 .gallery {
@@ -103,21 +103,7 @@ header .logo a img {
 .feature {
     width: 30%;
     box-shadow: 10px 10px 5px grey;
-    /* height: auto; */
-    /* flex-grow: 1; */
-    /* padding: 2rem; */
-    /* margin: 1.25rem; */
 }
-
-/* .future .center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-/* .feature .image-container {
-    margin: 0 auto;
-} */
 
 .feature img {
     max-width: 100%;
@@ -125,23 +111,10 @@ header .logo a img {
 
 @media only screen and (max-width: 1000px) {
     .feature {
-        width: 100%;
+        width: 95%;
         margin: 2rem auto;
     }
 }
-
-/* .feature .content {
-    text-align: center;
-    padding: 2.5rem 0;
-    margin: 0 auto;
-} */
-
-/* .feature h2 {
-    padding-bottom: .5rem;
-    font-size: 2.25rem;
-    font-weight: bold;
-    color: #4a4a4a;
-} */
 
 /* Mid Section */
 
@@ -150,8 +123,6 @@ header .logo a img {
     margin: 3rem 0;
     background-repeat: no-repeat;
     background-color: darkcyan;
-    /* background-size: cover; */
-    /* background-position: center; */
     text-align: center;
     color: yellow;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -181,11 +152,13 @@ header .logo a img {
 .row .one {
     background: url('./assets/vince-fleming-aZVpxRydiJk-unsplash.jpg');
     float: right;
+    border-radius: 0 100px 0 0;
 }
 
 .row .two {
     background-image: url('./assets/lars-bo-nielsen-xewH-utuFYA-unsplash.jpg');
     float: left;
+    border-radius: 0 0 0 100px;
 }
 
 .bottom-section .row .txt {
@@ -199,11 +172,13 @@ header .logo a img {
 .bottom-section .row .left {
     background-color: rgb(77, 201, 194);
     float: left;
+    border-radius: 100px 0 0 0;
 }
 
 .bottom-section .row .right {
     background-color: rgb(169, 128, 216);
     float: right;
+    border-radius: 0 0 100px 0;
 }
 
 .bottom-section .row h1, .row h4 {
@@ -225,7 +200,38 @@ header .logo a img {
 .bottom-section .row button:hover {
     background-color: gray;
     color: white;
-  }
+}
+
+@media only screen and (max-width: 1100px) {
+    .bottom-section .row .txt {
+        width: 100%;
+        padding: 1rem 4rem;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .bottom-section .row .img {
+        width: 100%;
+        height: 25rem;
+    }
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem 0;
+    }
+    .row .one {
+        border-radius: 0;
+    }
+    .row .two {
+        border-radius: 0;
+    }
+    .bottom-section .row .left {
+        border-radius: 0;
+    }
+    .bottom-section .row .right {
+        border-radius: 0;
+    }
+}
 
 /* Footer */
 
