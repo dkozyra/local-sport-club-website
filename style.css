@@ -62,18 +62,14 @@ header .logo a img {
     padding: 0 3rem;
 }
 
-@media only screen and (max-width: 760px) {
-    .sub-header-txt{
-        font-size: 1.5rem;
-    }
-}
-
 /* Statement */
 
 .statement{
     text-align: center;
     font-family: 'Indie Flower';
     margin: 5rem 0;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 .statement h2 {
@@ -99,19 +95,18 @@ header .logo a img {
 
 .gallery {
     display: flex;
-    /* justify-content: center; */
-    /* padding: 4rem 0; */
-    /* background-color: #f3f3f3; */
+    justify-content: space-around;
+    margin: 3rem auto;
     flex-wrap: wrap;
 }
 
 .feature {
-    /* width: 30%; */
+    width: 30%;
+    box-shadow: 10px 10px 5px grey;
     /* height: auto; */
     /* flex-grow: 1; */
     /* padding: 2rem; */
     /* margin: 1.25rem; */
-    background-color: white;
 }
 
 /* .future .center {
@@ -125,8 +120,14 @@ header .logo a img {
 } */
 
 .feature img {
-    width: 30%;
-    height: auto;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .feature {
+        width: 100%;
+        margin: 2rem auto;
+    }
 }
 
 /* .feature .content {
@@ -142,39 +143,93 @@ header .logo a img {
     color: #4a4a4a;
 } */
 
-/* Team Section */
+/* Mid Section */
 
-/* .team-section {
-    padding: 2rem 0;
+.mid-section {
+    padding: 2rem;
+    margin: 3rem 0;
     background-repeat: no-repeat;
-    background-image: url('./assets/finance-background.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: darkcyan;
+    /* background-size: cover; */
+    /* background-position: center; */
     text-align: center;
-    color: white;
-} */
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
+/* Bottom Section */
 
-/* .team-section .team-heading h1 {
-    font-size: 3.5rem;
-    letter-spacing: 1.5rem;
-} */
-
-/* .team-section .images-container {
-    max-width: 100%;
-    padding: 0 1%;
-    margin-top: 6rem;
+.bottom-section {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-} */
+    justify-content: center;
+    margin: 3rem 0;
+}
 
+.bottom-section .row {
+    width: 80%;
+    height: auto;
+}
 
+.bottom-section .row .img {
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+}
 
+.row .one {
+    background: url('./assets/vince-fleming-aZVpxRydiJk-unsplash.jpg');
+    float: right;
+}
+
+.row .two {
+    background-image: url('./assets/lars-bo-nielsen-xewH-utuFYA-unsplash.jpg');
+    float: left;
+}
+
+.bottom-section .row .txt {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.bottom-section .row .left {
+    background-color: rgb(77, 201, 194);
+    float: left;
+}
+
+.bottom-section .row .right {
+    background-color: rgb(169, 128, 216);
+    float: right;
+}
+
+.bottom-section .row h1, .row h4 {
+    font-weight: 100;
+    color: white;
+}
+
+.bottom-section .row button {
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    width: 15rem;
+    padding: 1rem;
+    transition-duration: 0.4s;
+    margin-top: 3rem;
+}
+
+.bottom-section .row button:hover {
+    background-color: gray;
+    color: white;
+  }
 
 /* Footer */
 
-/* footer {
+footer {
     background-color: #9b9b9b;
     padding: 1.5rem 2rem;
-} */
+}
