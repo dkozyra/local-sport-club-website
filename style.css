@@ -103,10 +103,14 @@ header .logo a img {
 .feature {
     width: 30%;
     box-shadow: 10px 10px 5px grey;
+    /* font-size: 0; */ /* remove extra space below image */
+    /* line-height: 0; */ /* remove extra space below image */
 }
 
 .feature img {
     max-width: 100%;
+    display: block; /* remove extra space below image */
+    /* vertical-align: bottom; */ /* remove extra space below image */
 }
 
 @media only screen and (max-width: 1000px) {
